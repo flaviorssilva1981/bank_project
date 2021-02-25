@@ -9,7 +9,6 @@ class Pessoa {
 //"private" modified of the variable
     constructor()
 //secondary constructor
-
     fun pessoaInfo() = "$nome e $cpf"
 }
 
