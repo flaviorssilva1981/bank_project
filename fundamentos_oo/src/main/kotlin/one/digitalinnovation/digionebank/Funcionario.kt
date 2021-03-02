@@ -8,6 +8,7 @@ abstract class Funcionario(
     val salario: Double,
 ) : Pessoa(nome, cpf)  {
     protected abstract fun calculoAuxilio() : Double
+    // to protect an abstract fun to change
 
     override fun toString(): String = """
         Nome: $nome

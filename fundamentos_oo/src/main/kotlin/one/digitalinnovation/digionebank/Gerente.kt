@@ -6,4 +6,5 @@ class Gerente(
     salario: Double,
 ) : Funcionario(nome, cpf, salario) {
     override fun calculoAuxilio() = salario * 0.2
+    // to use an abstract protect fun
 }
