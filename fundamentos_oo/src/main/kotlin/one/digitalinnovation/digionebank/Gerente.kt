@@ -4,7 +4,8 @@ class Gerente(
     nome: String,
     cpf: String,
     salario: Double,
-) : Funcionario(nome, cpf, salario) {
+    val senha: String
+) : Funcionario(nome = nome, cpf = cpf, salario = salario), Logavel {
     override fun calculoAuxilio() = salario * 0.2
-    // to use an abstract protect fun
-}
+    override fun login(): Boolean = "123mudar" == senha
+    }
